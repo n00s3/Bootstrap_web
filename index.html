@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
-        <!--name="viewport" : ���� �ػ󵵿� �°� �� ����Ʈ�� ������
-            content="width=device-width" : �ʺ�� ��ġ�� �ʺ�� ��ġ
-            initial-scale="1" : �Ϲ����� ����-->
-        <title>�ڵ� �ν���</title>
+        <!--name="viewport" : 현재 해상도와 맞게 웹 사이트를 보여줌
+            content="width=device-width" : 너비는 장치의 너비와 일치
+            initial-scale="1" : 일반적인 비율-->
+        <title>코딩 부스터</title>
         <link rel="stylesheet" href="css/bootstrap.css">
-        <!--rel="stylesheet" : �ܺ� css�� �̿�-->
+        <!--rel="stylesheet" : 외부 css를 이용-->
     </head>  
     <body>
-        Hello World!
+        <style type="text/css">
+            .jumbotron {
+                background-image: url('images/jumbotronbackground.jpg');
+                background-size: cover;
+                text-shadow: black 0.2em 0.2em 0.2em;
+                color: white;
+            }
+        </style>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">코딩 부스터를 소개합니다.</h1>
+                <p class="text-center">코딩 부스터는 IT 교육 사이트입니다. 다양한 IT 관련 무료 및 유료 강의가 존재합니다.</p>
+                <p class="text-center"><a class="bten btn-primary btn-lg" href="#" role="button">강의 들으러 가기</a></p>
+                <!--p tag : 문단 표시
+                    class="text-center : 가운데 정렬
+                    a tag : 다른 주소나 다른 링크로 이동할 수 있도록 함-->
+            </div>
+        </div>
     </body>
 </html>
