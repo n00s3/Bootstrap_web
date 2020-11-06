@@ -65,18 +65,37 @@
                 </ul>
             </div>
         </nav>
-        <p></p>
+        <br>
         <!--Jumbotron-->
         <div class="container">
             <div class="jumbotron">
                 <h1 class="text-center">noose's website</h1>
                 <p class="text-center">IT / Security</p>
-                <p class="text-center"><a class="bten btn-primary btn-lg" href="#" role="button">learn</a></p>
+                <p class="text-center"><a class="bten btn-primary btn-lg" href="#" role="button">learn</a></p>      
                 <!--p tag : 문단
                     class="text-center : 가운데정렬
                     a tag : 다른 주소나 링크-->
             </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>noose 특징</h4>
+                    <p>noose는 고수입니다.</p>
+                    <!--modal-->
+                    <p><a class="btn btn-outline-primary" data-target="#modal" data-toggle="modal">detail</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>쉬움</h4>
+                    <p>쉬운 난이도로 접근</p>
+                    <p><a class="btn btn-outline-primary" href="#">detail</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>핵심</h4>
+                    <p>핵심만 전달</p>
+                    <p><a class="btn btn-outline-primary" href="#">detail</a></p>
+                </div>
+            </div>
         </div>
+
 
         <!--footer-->
         <!--
@@ -108,6 +127,23 @@
             <p>Copyright &copy; 2020<br>성준혁(Junhyuk Sung)</p>
         </div>
 
+        <div class="row">
+            <div class="modal" id="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            noose 특징
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="text-align: center;">
+                            noose가 공부한 자료들을 확인 할 수 있습니다.<br>
+                            또한 다양한 강의가 유튜브와 연결되어 제공됩니다.<br><br>
+                            <img src="images/youtube.png" id="imagepreview" style="width: 256px; height: 256px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script src="js/bootstrap.bundle.js"></script>
     </body>
