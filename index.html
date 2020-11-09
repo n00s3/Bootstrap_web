@@ -9,6 +9,9 @@
         <title>noose</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/codingBooster.css">
+        <!--Font Awesome 5.5 : 아이콘-->
+        <script src="https://kit.fontawesome.com/d133883fba.js" crossorigin="anonymous"></script>
+
 
         <!--rel="stylesheet" : 외부 스타일시트 참조-->
     </head>  
@@ -23,7 +26,7 @@
         </style>
         <!--Navigation Var-->
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <a class="navbar-brand" href="#">Category</a>
+            <a class="navbar-brand" href="index.html">NOOSE</a>
             <button class="navbar-toggler" type="button"
                     data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -31,7 +34,10 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">소개</a>
+                        <a class="nav-link" href="index.html">소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instructor.html">강사진</a>
                     </li>
                     <!--Dropdown-->
                     <li class="nav-item dropdown">
@@ -39,9 +45,10 @@
                             프로그래밍
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Python</a>
-                            <a class="dropdown-item" href="#">Java</a>
-                            <a class="dropdown-item" href="#">C/C++</a>
+                            <a class="dropdown-item" href="lecture.html?lectureName=C">C/C++</a>
+                            <a class="dropdown-item" href="lecture.html?lectureName=Java">Java</a>
+                            <a class="dropdown-item" href="lecture.html?lectureName=Python">Python</a>
+
                         </div>
                     </li>
                 </ul>
@@ -58,8 +65,8 @@
                             접속하기
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">로그인</a>
-                            <a class="dropdown-item" href="#">회원가입</a>
+                            <a class="dropdown-item" href="loginForm.html">로그인</a>
+                            <a class="dropdown-item" href="registerForm.html">회원가입</a>
                         </div>
                     </li>
                 </ul>
@@ -71,7 +78,7 @@
             <div class="jumbotron">
                 <h1 class="text-center">noose's website</h1>
                 <p class="text-center">IT / Security</p>
-                <p class="text-center"><a class="bten btn-primary btn-lg" href="#" role="button">learn</a></p>      
+                <p class="text-center"><a class="bten btn-primary btn-lg" href="lecture.html" role="button">배우기</a></p>      
                 <!--p tag : 문단
                     class="text-center : 가운데정렬
                     a tag : 다른 주소나 링크-->
@@ -84,15 +91,55 @@
                     <p><a class="btn btn-outline-primary" data-target="#modal" data-toggle="modal">detail</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h4>쉬움</h4>
-                    <p>쉬운 난이도로 접근</p>
-                    <p><a class="btn btn-outline-primary" href="#">detail</a></p>
+                    <h4>쉬운 접근성</h4>
+                    <p>쉬운 난이도로 noose가 알려줍니다!</p>
+                    <p><a class="btn btn-outline-primary" href="instructor.html">detail</a></p>
                 </div>
                 <div class="col-md-4">
                     <h4>핵심</h4>
                     <p>핵심만 전달</p>
-                    <p><a class="btn btn-outline-primary" href="#">detail</a></p>
+                    <p><a class="btn btn-outline-primary" href="lecture.html">detail</a></p>
                 </div>
+            </div>
+            <div class="card card-primary.card-inverse">
+                <div class="card-header">
+                    <h3 class="card-title"><i class="fas fa-chalkboard"></i>
+                        &nbsp;&nbsp;최신 강의 목록
+                    </h3>
+                </div>
+
+                <div class="card-block">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="lecture.html?lectureName=C"><img class="media-object" src="images/C.jpg" alt="C언어 강의 이미지"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#">C언어 기초 프로그래밍 강의</a>&nbsp;<span class="badge badge-primary">New</span></h4>
+                            C언어는 프로그래밍의 기본입니다.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="lecture.html?lectureName=Java"><img class="media-object" src="images/java.png" alt="Java 강의 이미지"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Java 기초 프로그래밍 강의</a>&nbsp;<span class="badge badge-primary">New</span></h4>
+                            Java는 객체 지향 프로그래밍의 기본입니다.
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="lecture.html?lectureName=Python"><img class="media-object" src="images/python.png" alt="Python 강의 이미지"></a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#">파이썬 프로그래밍 강의</a>&nbsp;<span class="badge badge-primary">New</span></h4>
+                            파이썬 최고.
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
