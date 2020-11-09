@@ -16,6 +16,32 @@
         <!--rel="stylesheet" : 외부 스타일시트 참조-->
     </head>  
     <body>
+        <style type="text/css">
+            blockquote{
+                background: #f9f9f9;
+                border-left: 10px solid #cccccc;
+                margin: 1.5em 10px;
+                padding: 0.5em 10px;
+                quotes: "\201C""\201D""\2018""\2019";
+            }
+            blockquote:before {
+                color: #cccccc;
+                content: open-qutoe;
+                font-size: 3em;
+                line-height: 0.1em;
+                margin-left: 0.25em;
+                vertical-align: -0.4em;
+            }
+            blockquote:after {
+                color: #cccccc;
+                content: open-qutoe;
+                font-size: 3em;
+                line-height: 0.1em;
+                margin-left: 0.25em;
+                vertical-align: -0.4em;
+            }
+        </style>
+
         <!--Navigation Var-->
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <a class="navbar-brand" href="index.html">NOOSE</a>
@@ -81,8 +107,8 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;성준혁</h4>
-                                noose 대표 강사입니다.
-                        </div>
+                            &nbsp;&nbsp;noose 대표 강사입니다.
+                        </div> 
                     </div>
                 </div>
                 <table class="table">
@@ -115,6 +141,9 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="card-footer">
+                    <blockquote>&nbsp;&nbsp;"일단 망해라. 그러면 당신이 박수를 치더라도 사람들은 똥을 쌀 것이다." -noose</blockquote>
+                </div>
             </div>
         </div>
 
